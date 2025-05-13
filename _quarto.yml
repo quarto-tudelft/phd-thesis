@@ -1,21 +1,54 @@
 project:
   type: book
-
+  output-dir: docs
 
 book:
   title: "TU Delft Thesis Template"
-  author: 
-    - name: "Patrick Altmeyer"
+  subtitle: "The `quarto-tudelft` extension"
+  author: "Norah Jones"
   date: "5/13/2025"
   chapters:
     - index.qmd
-    - intro.qmd
     - summary.qmd
+    - intro.qmd
+    - guide.qmd
     - references.qmd
 
 bibliography: references.bib
 
+# Title page options:
+defense-date: "Tuesday 20, June 2025 at 10:00 o'clock"
+author-degree: "MSc, University of Research, Country"
+author-birthplace: "Amsterdam, The Netherlands"
+rector: "prof. dr. ir. A. B. Example"
+committee:
+  - title: "Prof. dr. A. Kleiner"
+    affiliation: "Delft University of Technology"
+    role: "promotor"
+  - title: "Dr. A.A. Aaronson"
+    affiliation: "Delft University of Technology"
+    role: "copromotor"
+independent-members:
+  - title: "Prof. dr. A. Jansen"
+    affiliation: "Delft University of Technology"
+  - title: "Prof. dr. ir. A.B.C.D. van de Lange-Achternaam"
+    name-too-long: true
+    affiliation: "Delft University of Technology"
+  - title: "Prof. dr. N. Nescio"
+    affiliation: "Politecnico di Milano, Italy"
+  - title: "Prof. dr. ir. J. Doe"
+    affiliation: "Delft University of Technology"
+    role: "reserve member"
+other-members:
+  - title: "Prof. dr. ir. J. de Wit"
+    affiliation: "Delft University of Technology"
+  - title: "Dr. ir. Q. de Zwart"
+    affiliation: "Delft University of Technology"
+keywords: 
+  - Quarto
+  - Extension
+  - Template
+
 format:
-  tudelft-pdf:
-    keep-tex: true
+  tudelft-pdf: default
   tudelft-html: default
