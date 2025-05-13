@@ -1,10 +1,11 @@
 project:
   type: book
-  output-dir: docs
+
 
 book:
   title: "TU Delft Thesis Template"
-  author: "Norah Jones"
+  author: 
+    - name: "Patrick Altmeyer"
   date: "5/13/2025"
   chapters:
     - index.qmd

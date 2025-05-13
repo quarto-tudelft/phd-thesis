@@ -67,6 +67,7 @@
 
     to be defended publicly on
 
+        $date
         [date= weekday (word) day (number), month (word) year (number)] at [hh:mm (number)] o'clock
 
     \bigskip
@@ -79,9 +80,10 @@
 
     %% Print the full name of the author.
     \makeatletter
-    {\Large\titlefont\bfseries\@firstnames\ \MakeUppercase{\titleshape\@lastname}}
+    \author{$for(authors)$$it.name.literal$$sep$ \and $endfor$}
+    % {\Large\titlefont\bfseries\@firstnames\ \MakeUppercase{\titleshape\@lastname}}
     \makeatother
-
+    \author{$for(authors)$$it.name.literal$$sep$ \and $endfor$}
     \bigskip
     \bigskip
 
