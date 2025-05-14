@@ -1,18 +1,10 @@
 project:
-  type: book
+  title: "TU Delft Thesis Template"
+  type: thesis
   output-dir: docs
 
 book:
-  title: "TU Delft Thesis Template"
-  subtitle: "The `quarto-tudelft` extension"
-  author: "Norah Jones"
-  date: "5/13/2025"
-  chapters:
-    - index.qmd
-    - summary.qmd
-    - intro.qmd
-    - guide.qmd
-    - references.qmd
+  title: "My Thesis"
 
 bibliography: references.bib
 
@@ -48,7 +40,3 @@ keywords:
   - Quarto
   - Extension
   - Template
-
-format:
-  tudelft-pdf: default
-  tudelft-html: default
