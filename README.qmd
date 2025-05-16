@@ -1,0 +1,11 @@
+---
+format: 
+  commonmark:
+    variant: -raw_html+tex_math_dollars
+    wrap: none
+---
+
+# phd-thesis
+
+Quarto extension for PhD thesis.
+
