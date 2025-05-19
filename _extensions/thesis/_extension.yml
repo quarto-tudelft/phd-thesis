@@ -14,3 +14,5 @@ contributes:
         - intro.qmd
     format:
       tudelft-pdf: default
+    format-resources:
+      - _extensions/quarto-tudelft/
