@@ -15,6 +15,9 @@ bibliography: references.bib
 defense-date: "Tuesday 20, June 2025 at 10:00 o'clock"
 author-degree: "MSc, University of Research, Country"
 author-birthplace: "Amsterdam, The Netherlands"
+dedication:
+  - text: "They not like us."
+    author: Kendrick Lamar
 committee:
   - title: "Prof. dr. A. Kleiner"
     affiliation: "Delft University of Technology"
