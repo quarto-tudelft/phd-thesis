@@ -9,5 +9,10 @@ format:
 
 Quarto extension for PhD thesis.
 
-{{< include guide.qmd >}}
+{{< include install.qmd >}}
 
+To find out more about this extension, simply preview starter template:
+
+```
+quarto preview
+```
