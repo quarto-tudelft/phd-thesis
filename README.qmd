@@ -11,6 +11,8 @@ Quarto extension for PhD thesis.
 
 {{< include install.qmd >}}
 
+## Usage
+
 To find out more about this extension, simply preview starter template:
 
 ```

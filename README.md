@@ -22,6 +22,8 @@ This is a [project type extension](https://quarto.org/docs/extensions/project-ty
 
 If you already have an existing repository, we recommend using the [quarto-tudelft/base](https://github.com/quarto-tudelft/base) extension instead of this template.
 
+## Usage
+
 To find out more about this extension, simply preview starter template:
 
     quarto preview
