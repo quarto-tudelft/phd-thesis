@@ -9,3 +9,5 @@ format:
 
 Quarto extension for PhD thesis.
 
+{{< include guide.qmd >}}
+
