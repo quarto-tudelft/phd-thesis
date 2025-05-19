@@ -5,6 +5,9 @@ project:
 
 book:
   title: "My Thesis"
+  chapters:
+    - guide.qmd
+    - cool-quarto-things.qmd
 
 bibliography: references.bib
 
