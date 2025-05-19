@@ -13,4 +13,5 @@ contributes:
         - summary.qmd
         - intro.qmd
     format:
+      tudelft-html: default
       tudelft-pdf: default

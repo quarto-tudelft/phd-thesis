@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Thesis",
+    "section": "",
+    "text": "Preface\n\n\n\n\n\n\nNote\n\n\n\nPreface goes here. This chapter is optional.\n\n\nThis is the TU Delft dissertation template for Quarto use the book project type. To learn more about Quarto books visit https://quarto.org/docs/books.\nThe template uses the quarto-tudelft extension for formatting. The extension itself is adapted from a LaTeX template that can be found at GitLab: novanext/tudelft-dissertation.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\nSamenvatting",
+    "crumbs": [
+      "Summary"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "guide.html",
+    "href": "guide.html",
+    "title": "2  Guide",
+    "section": "",
+    "text": "2.1 Format Options\nThis extension provides several variables to customize your thesis title page:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Guide</span>"
+    ]
+  },
+  {
+    "objectID": "guide.html#format-options",
+    "href": "guide.html#format-options",
+    "title": "2  Guide",
+    "section": "",
+    "text": "Variable\nDescription\nExample\n\n\n\n\ntitle\nTitle of your dissertation\n“My Doctoral Dissertation”\n\n\nsubtitle\nOptional subtitle\n“A Study of Something Important”\n\n\nauthor\nFull name of the author\n“Jane Doe”\n\n\nauthor-degree\nHighest academic title, university, country\n“MSc, University of Research, Country”\n\n\nauthor-birthplace\nTown/city and country of birth\n“Amsterdam, The Netherlands”\n\n\ndefense-date\nDate and time of the defense\n“Tuesday 20, June 2025 at 10:00 o’clock”\n\n\nrector\nName of the Rector Magnificus\n“prof. dr. ir. A. B. Example”\n\n\ncommittee\nList of committee members\nSee example below\n\n\nindependent-members\nList of independent members\nSee example below\n\n\nother-members\nList of other members\nSee example below\n\n\ncontributors\nList of committee members who contributed to the dissertation\nSee example below\n\n\nkeywords\nKeywords describing the research\n“keyword1, keyword2, keyword3”\n\n\nprinted-by\nPrinting company information\n“University Press”\n\n\ncover-by\nCover design credit\n“Jane Smith”\n\n\ncopyright-year\nYear of copyright\n“2025”\n\n\nphd-series\nPhD series information if applicable\n“Casimir PhD Series, Delft-Leiden 2025-01”\n\n\nisbn\nISBN number\n“978-90-8593-000-0”\n\n\nrepository-url\nURL to the electronic version\n“https://repository.tudelft.nl/”\n\n\n\n\n2.1.1 TU Delft Logo Inclusion\nThe extension automatically includes the TU Delft logo by default. You can control this behavior:\n# Include the TU Delft logo (default: true)\ninstitute-logo-tudelft: true  \n\n# Add additional logos\ninstitute-logos:\n  - path: \"images/partner-institute-logo.png\"\n  - path: \"images/another-institute-logo.png\"\nTo disable the automatic inclusion of the TU Delft logo:\ninstitute-logo-tudelft: false\nWhen providing your own logos, the TU Delft logo (if enabled) will always appear first, followed by your specified logos.\n\n\n2.1.2 Multiple Institute Logos\nTo include multiple logos of institutions that contributed to your research:\ninstitute-logos:\n  - path: \"images/tudelft-logo.png\"\n    spacing: \"1.5cm\"  # Optional spacing between logos\n  - path: \"images/partner-institute-logo.png\"\nAlternatively, for a single logo, you can use the simpler syntax:\ninstitute-logo: \"images/tudelft-logo.png\"\n\n\n2.1.3 Example YAML Configuration\n---\ntitle: \"My Doctoral Dissertation\"\nsubtitle: \"A Study of Something Important\"\nauthor: \"Jane Doe\"\nauthor-degree: \"MSc, University of Research, Country\"\nauthor-birthplace: \"Amsterdam, The Netherlands\"\ndefense-date: \"Tuesday 20, June 2025 at 10:00 o'clock\"\nrector: \"prof. dr. ir. A. B. Example\"\n\n# Committee members\ncommittee:\n  - title: \"Prof. dr. A. Kleiner\"\n    affiliation: \"Delft University of Technology\"\n    role: \"promotor\"\n  - title: \"Dr. A.A. Aaronson\"\n    affiliation: \"Delft University of Technology\"\n    role: \"copromotor\"\n\nindependent-members:\n  - title: \"Prof. dr. A. Jansen\"\n    affiliation: \"Delft University of Technology\"\n  - title: \"Prof. dr. ir. A.B.C.D. van de Lange-Achternaam\"\n    affiliation: \"Delft University of Technology\"\n    name-too-long: true  # Use this for names that need to be on their own line\n  - title: \"Prof. dr. N. Nescio\"\n    affiliation: \"Politecnico di Milano, Italy\"\n  - title: \"Prof. dr. ir. J. Doe\"\n    affiliation: \"Delft University of Technology\"\n    role: \"reserve member\"\n\nother-members:\n  - title: \"Prof. dr. ir. J. de Wit\"\n    affiliation: \"Delft University of Technology\"\n  - title: \"Dr. ir. Q. de Zwart\"\n    affiliation: \"Delft University of Technology\"\n\n# Contributors to dissertation\ncontributors:\n  - title: \"Prof. dr. ir. J. de Wit\"\n    affiliation: \"Delft University of Technology\"\n\n# Institute logos (choose one approach)\ninstitute-logos:\n  - path: \"images/tudelft-logo.png\"\n    spacing: \"1.5cm\"\n  - path: \"images/partner-institute-logo.png\"\n\n# Publication details\nkeywords: \"keyword1, keyword2, keyword3\"\nprinted-by: \"University Press\"\ncover-by: \"Jane Smith, featuring an abstract representation of the research topic\"\nisbn: \"978-90-8593-000-0\"\n\nformat:\n  tudelft-thesis-pdf: default\n---",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Guide</span>"
+    ]
+  },
+  {
+    "objectID": "cool-quarto-things.html",
+    "href": "cool-quarto-things.html",
+    "title": "3  Cool Quarto Things",
+    "section": "",
+    "text": "3.1 Custom Callouts\nThe template adds custom numbered blocks using the embedded ute/custom-numbered-blocks extension, which supports HTML and PDF with non-standard cross-references (i.e. \\ref{} syntax). We provide two custom numbered blocks:\nWe provide two custom numbered blocks:\nTRQ 3.1 is an example of a Thesis Research Question; RQ 3.1 is an example of a Research Questions; Rec. 3.1 is an example of a recommendation.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cool Quarto Things</span>"
+    ]
+  },
+  {
+    "objectID": "cool-quarto-things.html#custom-callouts",
+    "href": "cool-quarto-things.html#custom-callouts",
+    "title": "3  Cool Quarto Things",
+    "section": "",
+    "text": "TRQ for Thesis Research Questions\nRQ for Research Questions\nRec for Recommendations\n\n\n\nThesis Research Question 3.1: What is a TRQ?This is a Thesis Research Question, that you might want to use in the introduction of your thesis.\n\n\n\nResearch Question 3.1: What is a RQ?This is a Research Question, that you might want to use in any chapter of your thesis.\n\n\n\nRecommendation 3.1: What is a Rec?This is a Recommendation that you might want to use in the conclusion of your thesis.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cool Quarto Things</span>"
+    ]
+  }
+]
