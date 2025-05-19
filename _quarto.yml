@@ -15,7 +15,6 @@ bibliography: references.bib
 defense-date: "Tuesday 20, June 2025 at 10:00 o'clock"
 author-degree: "MSc, University of Research, Country"
 author-birthplace: "Amsterdam, The Netherlands"
-rector: "prof. dr. ir. A. B. Example"
 committee:
   - title: "Prof. dr. A. Kleiner"
     affiliation: "Delft University of Technology"
@@ -43,3 +42,10 @@ keywords:
   - Quarto
   - Extension
   - Template
+institute-message: "This is an optional message to acknowledge partner institutes."
+institute-logos:
+  - path: "www/delft-final.png"
+
+format:
+  tudelft-pdf: default
+  tudelft-html: default

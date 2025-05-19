@@ -12,6 +12,7 @@ contributes:
         - index.qmd
         - summary.qmd
         - intro.qmd
+      downloads: [pdf, epub]
     format:
       tudelft-html: default
       tudelft-pdf: default
