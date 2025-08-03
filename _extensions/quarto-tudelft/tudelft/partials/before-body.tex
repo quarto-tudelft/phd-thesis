@@ -1,6 +1,9 @@
 % Adapted with the help of Claude Sonnet 3.7
 % !TeX spellcheck = en_GB
 
+% Apply frontmatter styling (Roman numerals for the page numbers of the title pages and toc)
+\frontmatter
+
 $if(propositions)$
 % Disable headers and footers for propositions pages
 \thispagestyle{empty}
@@ -16,6 +19,29 @@ $if(propositions)$
 \addtokomafont{disposition}{\color{black}\rmfamily\normalfont\mdseries}
 \renewcommand*{\raggedchapter}{\centering}
 \renewcommand*{\raggedsection}{\centering}
+
+% Add centered title section
+\begin{center}
+{\LARGE\bfseries Propositions}
+
+\vspace{1\baselineskip}
+
+accompanying the dissertation
+
+\vspace{1\baselineskip}
+
+{\large\bfseries\titlefont $title$}
+
+\vspace{0.5\baselineskip}
+
+by
+
+\vspace{0.5\baselineskip}
+
+{\large\bfseries $author$}
+\end{center}
+\vspace{2\baselineskip}
+
 % Insert propositions content
 $propositions$
 \endgroup
@@ -24,9 +50,6 @@ $propositions$
 % Clear to next page to ensure styling changes take effect
 \clearpage
 $endif$
-
-% Apply frontmatter styling (Roman numerals for the page numbers of the title pages and toc)
-\frontmatter
 
 \begin{titlepage}
 

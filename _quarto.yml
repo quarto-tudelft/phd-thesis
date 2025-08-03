@@ -14,7 +14,12 @@ book:
 
 bibliography: references.bib
 
+# Path to Quarto notebook with propositions:
 propositions: propositions.qmd
+
+# Author:
+author: Patrick Altmeyer
+
 # Title page options:
 defense-date: "Tuesday 20, June 2025 at 10:00 o'clock"
 author-degree: "MSc, University of Research, Country"
@@ -54,5 +59,6 @@ institute-logos:
   - path: "www/delft-final.png"
 
 format:
-  tudelft-pdf: default
+  tudelft-pdf: 
+    fourier: true # set to false to use Roboto Slab
   tudelft-html: default
