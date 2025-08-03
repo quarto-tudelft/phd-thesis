@@ -7,11 +7,7 @@ contributes:
     project:
       type: book
     book:
-      title: "Thesis Title"
-      chapters: 
-        - index.qmd
-        - summary.qmd
-        - intro.qmd
+      title: "Thesis Title"  
       downloads: [pdf, epub]
     format:
       tudelft-html: default
