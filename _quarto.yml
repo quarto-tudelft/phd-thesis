@@ -60,5 +60,5 @@ institute-logos:
 
 format:
   tudelft-pdf: 
-    fourier: true # set to false to use Roboto Slab
+    fourier: false # set to true to use fourier
   tudelft-html: default
