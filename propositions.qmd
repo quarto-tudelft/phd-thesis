@@ -1,0 +1,4 @@
+# Propositions {-}
+
+1. Quarto is the most superior form of scientific publishing.
+2. Julia is the most superior form of scientific computing.
