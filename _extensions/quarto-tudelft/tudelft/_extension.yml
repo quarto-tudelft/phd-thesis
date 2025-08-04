@@ -42,6 +42,6 @@ contributes:
         - partials/doc-class.tex
         - partials/before-body.tex
       filters:
-        - filters/tudelft-logo.lua
         - filters/propositions.lua
+        - filters/tudelft-logo.lua
       institute-logo-tudelft: true

@@ -11,8 +11,9 @@ book:
     - intro.qmd
     - guide.qmd
     - cool-quarto-things.qmd
+    - references.qmd
 
-bibliography: references.bib
+bibliography: bibliography.bib
 
 # Path to Quarto notebook with propositions:
 propositions: propositions.qmd

@@ -8,6 +8,8 @@ Preface goes here. This chapter is optional.
 
 This is the TU Delft dissertation template for Quarto use the book project type. To learn more about Quarto books visit <https://quarto.org/docs/books>.
 
-The template uses the `quarto-tudelft` extension for formatting. The extension itself is adapted from a LaTeX template that can be found at GitLab: [novanext/tudelft-dissertation](https://gitlab.com/novanext/tudelft-dissertation). 
+The template uses the `quarto-tudelft` extension for formatting. The extension itself is adapted from a LaTeX template that can be found at GitLab: [novanext/tudelft-dissertation](https://gitlab.com/novanext/tudelft-dissertation).
+
+@altmeyer2023explaining
 
 

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "My Thesis",
     "section": "",
-    "text": "Preface\n\n\n\n\n\n\nNote\n\n\n\nPreface goes here. This chapter is optional.\n\n\nThis is the TU Delft dissertation template for Quarto use the book project type. To learn more about Quarto books visit https://quarto.org/docs/books.\nThe template uses the quarto-tudelft extension for formatting. The extension itself is adapted from a LaTeX template that can be found at GitLab: novanext/tudelft-dissertation.",
+    "text": "Preface\n\n\n\n\n\n\nNote\n\n\n\nPreface goes here. This chapter is optional.\n\n\nThis is the TU Delft dissertation template for Quarto use the book project type. To learn more about Quarto books visit https://quarto.org/docs/books.\nThe template uses the quarto-tudelft extension for formatting. The extension itself is adapted from a LaTeX template that can be found at GitLab: novanext/tudelft-dissertation.\nAltmeyer, Deursen, and Liem (2023)\n\n\n\n\nAltmeyer, Patrick, Arie van Deursen, and Cynthia C. S. Liem. 2023. “Explaining Black-Box Models through Counterfactuals.” In Proceedings of the JuliaCon Conferences, 1:130. https://doi.org/10.21105/jcon.00130.",
     "crumbs": [
       "Preface"
     ]
@@ -67,6 +67,16 @@
     "text": "TRQ for Thesis Research Questions\nRQ for Research Questions\nRec for Recommendations\n\n\n\nThesis Research Question 3.1: What is a TRQ?This is a Thesis Research Question, that you might want to use in the introduction of your thesis.\n\n\n\nResearch Question 3.1: What is a RQ?This is a Research Question, that you might want to use in any chapter of your thesis.\n\n\n\nRecommendation 3.1: What is a Rec?This is a Recommendation that you might want to use in the conclusion of your thesis.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Cool Quarto Things</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Altmeyer, Patrick, Arie van Deursen, and Cynthia C. S. Liem. 2023.\n“Explaining Black-Box Models through\nCounterfactuals.” In Proceedings of the JuliaCon\nConferences, 1:130. https://doi.org/10.21105/jcon.00130.",
+    "crumbs": [
+      "References"
     ]
   }
 ]

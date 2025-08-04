@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -78,12 +98,12 @@ ul.task-list li input[type="checkbox"] {
   --color1: #fff6e3;
   --color2: #ffb81c;
 }
-.RQ {
-  --color1: #dff4fa;
-  --color2: #00a6d6;
-}
 .TRQ {
   --color1: #80d2eb;
+  --color2: #00a6d6;
+}
+.RQ {
+  --color1: #dff4fa;
   --color2: #00a6d6;
 }
 </style>
@@ -174,6 +194,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cool Quarto Things</span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -239,8 +265,14 @@ Note
 </div>
 <p>This is the TU Delft dissertation template for Quarto use the book project type. To learn more about Quarto books visit <a href="https://quarto.org/docs/books" class="uri">https://quarto.org/docs/books</a>.</p>
 <p>The template uses the <code>quarto-tudelft</code> extension for formatting. The extension itself is adapted from a LaTeX template that can be found at GitLab: <a href="https://gitlab.com/novanext/tudelft-dissertation">novanext/tudelft-dissertation</a>.</p>
+<p><span class="citation" data-cites="altmeyer2023explaining">Altmeyer, Deursen, and Liem (<a href="references.html#ref-altmeyer2023explaining" role="doc-biblioref">2023</a>)</span></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-altmeyer2023explaining" class="csl-entry" role="listitem">
+Altmeyer, Patrick, Arie van Deursen, and Cynthia C. S. Liem. 2023. <span>“<span class="nocase">Explaining Black-Box Models through Counterfactuals</span>.”</span> In <em>Proceedings of the JuliaCon Conferences</em>, 1:130. <a href="https://doi.org/10.21105/jcon.00130">https://doi.org/10.21105/jcon.00130</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

@@ -9,7 +9,7 @@
 <meta name="author" content="Patrick Altmeyer">
 <meta name="keywords" content="Quarto, Extension, Template">
 
-<title>3&nbsp; Cool Quarto Things – My Thesis</title>
+<title>References – My Thesis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -32,8 +51,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./guide.html" rel="prev">
+<link href="./cool-quarto-things.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -75,16 +93,16 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>
-.RQ {
-  --color1: #dff4fa;
+.TRQ {
+  --color1: #80d2eb;
   --color2: #00a6d6;
 }
 .Rec {
   --color1: #fff6e3;
   --color2: #ffb81c;
 }
-.TRQ {
-  --color1: #80d2eb;
+.RQ {
+  --color1: #dff4fa;
   --color2: #00a6d6;
 }
 </style>
@@ -101,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./cool-quarto-things.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cool Quarto Things</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./references.html">References</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -171,13 +189,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./cool-quarto-things.html" class="sidebar-item-text sidebar-link active">
+  <a href="./cool-quarto-things.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cool Quarto Things</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
+  <a href="./references.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">References</span></a>
   </div>
 </li>
@@ -186,21 +204,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#custom-callouts" id="toc-custom-callouts" class="nav-link active" data-scroll-target="#custom-callouts"><span class="header-section-number">3.1</span> Custom Callouts</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cool Quarto Things</span></h1>
+<h1 class="title">References</h1>
 </div>
 
 
@@ -229,32 +241,16 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="custom-callouts" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="custom-callouts"><span class="header-section-number">3.1</span> Custom Callouts</h2>
-<!-- TODO: Adapt when possible -->
-<p>The template adds custom numbered blocks using the embedded <a href="https://github.com/ute/custom-numbered-blocks">ute/custom-numbered-blocks</a> extension, which supports HTML and PDF with non-standard cross-references (i.e.&nbsp;<code>\ref{}</code> syntax). We provide two custom numbered blocks:</p>
-<p>We provide two custom numbered blocks:</p>
-<ol type="1">
-<li><strong>TRQ</strong> for Thesis Research Questions</li>
-<li><strong>RQ</strong> for Research Questions</li>
-<li><strong>Rec</strong> for Recommendations</li>
-</ol>
-<p>TRQ <a href="cool-quarto-things.html#trq:what">3.1</a> is an example of a Thesis Research Question; RQ <a href="cool-quarto-things.html#rq:what">3.1</a> is an example of a Research Questions; Rec. <a href="cool-quarto-things.html#rec:what">3.1</a> is an example of a recommendation.</p>
-<div id="trq:what" class="TRQ" title="What is a TRQ?">
-<p></p><details class="TRQ fbx-default closebutton" open=""><summary><strong>Thesis Research Question 3.1: </strong>What is a TRQ?</summary><div>This is a Thesis Research Question, that you might want to use in the introduction of your thesis.<p></p>
-</div></details>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-altmeyer2023explaining" class="csl-entry" role="listitem">
+Altmeyer, Patrick, Arie van Deursen, and Cynthia C. S. Liem. 2023.
+<span>“<span class="nocase">Explaining Black-Box Models through
+Counterfactuals</span>.”</span> In <em>Proceedings of the JuliaCon
+Conferences</em>, 1:130. <a href="https://doi.org/10.21105/jcon.00130">https://doi.org/10.21105/jcon.00130</a>.
 </div>
-<div id="rq:what" class="RQ" title="What is a RQ?">
-<p></p><details class="RQ fbx-default closebutton" open=""><summary><strong>Research Question 3.1: </strong>What is a RQ?</summary><div>This is a Research Question, that you might want to use in any chapter of your thesis.<p></p>
-</div></details>
-</div>
-<div id="rec:what" class="Rec" title="What is a Rec?">
-<p></p><details class="Rec fbx-default closebutton" open=""><summary><strong>Recommendation 3.1: </strong>What is a Rec?</summary><div>This is a Recommendation that you might want to use in the conclusion of your thesis.<p></p>
-</div></details>
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -658,14 +654,11 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./guide.html" class="pagination-link" aria-label="Guide">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Guide</span></span>
+      <a href="./cool-quarto-things.html" class="pagination-link" aria-label="Cool Quarto Things">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cool Quarto Things</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
