@@ -35,6 +35,9 @@ committee:
   - title: "Dr. A.A. Aaronson"
     affiliation: "Delft University of Technology"
     role: "copromotor"
+  - title: "Prof. dr. ir. A.B.C.D. van de Lange-Achternaam"
+    name-too-long: true
+    affiliation: "Delft University of Technology"
 independent-members:
   - title: "Prof. dr. A. Jansen"
     affiliation: "Delft University of Technology"
