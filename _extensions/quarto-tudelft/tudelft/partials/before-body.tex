@@ -158,7 +158,8 @@ $endif$
         \hspace{\tabcolsep}\=\hspace{0.33\textwidth}\=\hspace{0.66\textwidth}                   \\[-3\medskipamount]
         \> Rector Magnificus,          \> chairperson\\
 $for(committee)$
-        \> $committee.title$,    \> $committee.affiliation$$if(committee.role)$, \textit{$committee.role$}$endif$    \\
+        \> $committee.title$,$if(committee.name-too-long)$\\
+        \>$endif$       \>    \> $committee.affiliation$$if(committee.role)$, \textit{$committee.role$}$endif$    \\
 $endfor$
 $if(independent-members)$
         \>\textit{Independent members:}                                                        \\[\smallskipamount]
