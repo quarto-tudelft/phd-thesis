@@ -1,4 +1,6 @@
 % Adapted with the help of Claude Sonnet 3.7
+
+% Adapted with the help of Claude Sonnet 3.7
 % !TeX spellcheck = en_GB
 
 % Apply frontmatter styling (Roman numerals for the page numbers of the title pages and toc)
@@ -170,7 +172,7 @@ $endif$
 $if(other-members)$
         \>\textit{Other members:}                                                               \\[\smallskipamount]
 $for(other-members)$
-        \>$other-members.title$, \> $other-members.affiliation$                         \\
+        \>$other-members.title$ \> $other-members.affiliation$                         \\
 $endfor$
 $endif$
     \end{tabbing}
@@ -193,25 +195,15 @@ $endif$
     %% Here you can include the logos of any institute that contributed financially
     %% to this dissertation.
     \vfill
-        \begin{center}
-        $if(institute-logos)$
-        $for(institute-logos)$
-                \includegraphics[height=0.75in]{$institute-logos.path$}$if(institute-logos.spacing)$\hspace{$institute-logos.spacing$}$else$\hspace{1cm}$endif$
-        $endfor$
-        $else$
-        $if(institute-logo)$
-                \includegraphics[height=0.75in]{$institute-logo$}
-        $endif$
-        $endif$
-        \end{center}
-    \vfill
-
-    %% Here you can include the logos of any institute that contributed financially
-    %% to this dissertation.
-    \vfill
     \begin{center}
+$if(institute-logos)$
+$for(institute-logos)$
+        \includegraphics[height=0.75in]{$institute-logos.path$}$if(institute-logos.spacing)$\hspace{$institute-logos.spacing$}$else$\hspace{1cm}$endif$
+$endfor$
+$else$
 $if(institute-logo)$
-        \includegraphics[height=0.5in]{$institute-logo$}
+        \includegraphics[height=0.75in]{$institute-logo$}
+$endif$
 $endif$
     \end{center}
     \vfill

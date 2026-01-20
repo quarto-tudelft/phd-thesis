@@ -1,5 +1,3 @@
-# Propositions
-
 1. Quarto is the most superior form of scientific publishing.
 2. Julia is the most superior form of scientific computing.
 3. Counterfactual explanations are the most intuitive way to explain opaque machine learning models [@altmeyer2023explaining].
