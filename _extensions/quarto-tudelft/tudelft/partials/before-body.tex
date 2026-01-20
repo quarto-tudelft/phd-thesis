@@ -129,9 +129,8 @@ $endif$
         \bigskip
         \bigskip
 
-        %% Print the full name of the author.
-        $if(author)${\Large\titlefont\bfseries $author$}$else$\author{$for(authors)$$it.name.literal$$sep$ \and $endfor$}$endif$
-        
+        $if(by-author)${\Large\titlefont\bfseries $for(by-author)$$it.name.given$ \MakeUppercase{$it.name.family$}$sep$ \and $endfor$}$endif$
+
         \bigskip
         \bigskip
 

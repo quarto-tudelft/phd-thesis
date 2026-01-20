@@ -19,7 +19,9 @@ bibliography: bibliography.bib
 propositions: propositions.qmd
 
 # Author:
-author: Patrick Altmeyer
+author: 
+  family: Altmeyer
+  given: Patrick
 
 # Title page options:
 defense-date: "Tuesday 20, June 2025 at 10:00 o'clock"
