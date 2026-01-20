@@ -23,6 +23,9 @@ author:
   family: Altmeyer
   given: Patrick
 
+# Print mode:
+print-mode: true
+
 # Title page options:
 defense-date: "Tuesday 20, June 2025 at 10:00 o'clock"
 author-degree: "MSc, University of Research, Country"

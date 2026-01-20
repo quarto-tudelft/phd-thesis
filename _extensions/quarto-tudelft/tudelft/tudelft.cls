@@ -183,22 +183,40 @@
   \mbox{\reset@font\bfseries#1??}}
 
 %% Hyperlinks are cyan, except in print mode, when they are all black.
-\hypersetup{
-    colorlinks = true,
-    citecolor = title,
-    linkcolor = title,
-    urlcolor = title,
-    bookmarksopen = true,
-}
+\if@print
+    \hypersetup{
+        colorlinks = true,
+        citecolor = black,
+        linkcolor = black,
+        urlcolor = black,
+        bookmarksopen = true,
+    }
+\else
+    \hypersetup{
+        colorlinks = true,
+        citecolor = title,
+        linkcolor = title,
+        urlcolor = title,
+        bookmarksopen = true,
+    }
+\fi
 
 
 %\KOMAoptions{numbers=endperiod}
 \renewcommand\chapterlinesformat[3]{\Ifstr{#2}{}{}{#2\\[12pt]}#3}
-\addtokomafont{disposition}{\color{title}\rmfamily\scshape\mdseries}
+
+%% Set colors for disposition elements based on print mode
+\if@print
+    \addtokomafont{disposition}{\color{black}\rmfamily\scshape\mdseries}
+    \addtokomafont{pageheadfoot}{\upshape\scshape\color{black}}
+\else
+    \addtokomafont{disposition}{\color{title}\rmfamily\scshape\mdseries}
+    \addtokomafont{pageheadfoot}{\upshape\scshape\color{title}}
+\fi
+
 \addtokomafont{chapter}{\bfseries\Huge}
 \addtokomafont{paragraph}{\upshape\bfseries\color{black}}
 \addtokomafont{subparagraph}{\itshape\color{black}}
-\addtokomafont{pageheadfoot}{\upshape\scshape\color{title}}
 
 \if@fourier
     %% The style for titles is small caps.
@@ -208,7 +226,11 @@
     \def\headerstyle{\titlestyle}
 \else
     %% The default style for titles is serif.
-    \addtokomafont{disposition}{\color{title}\robotoslab\scshape\mdseries}
+    \if@print
+        \addtokomafont{disposition}{\color{black}\robotoslab\scshape\mdseries}
+    \else
+        \addtokomafont{disposition}{\color{title}\robotoslab\scshape\mdseries}
+    \fi
     \def\titlefont{\robotoslab}
     \def\titleshape{}
     \def\titlestyle{\titlefont\titleshape\bfseries}
@@ -250,9 +272,14 @@
 \newif\ifmainmatter
 \mainmattertrue
 
-% Print the current chapter and section at the top of the page in cyan.
-\renewcommand{\sectionmark}[1]{\markright{\ifmainmatter\textcolor{black}{\thesection.}\fi\ #1}{}}
-\renewcommand{\chaptermark}[1]{\markboth{\ifmainmatter\textcolor{black}{\thechapter.}\fi\ #1}{}}
+% Print the current chapter and section at the top of the page in cyan (or black in print mode).
+\if@print
+    \renewcommand{\sectionmark}[1]{\markright{\ifmainmatter\textcolor{black}{\thesection.}\fi\ #1}{}}
+    \renewcommand{\chaptermark}[1]{\markboth{\ifmainmatter\textcolor{black}{\thechapter.}\fi\ #1}{}}
+\else
+    \renewcommand{\sectionmark}[1]{\markright{\ifmainmatter\textcolor{black}{\thesection.}\fi\ #1}{}}
+    \renewcommand{\chaptermark}[1]{\markboth{\ifmainmatter\textcolor{black}{\thechapter.}\fi\ #1}{}}
+\fi
 
 \let\oldfrontmatter\frontmatter
 \renewcommand{\frontmatter}{\oldfrontmatter\mainmatterfalse}
@@ -261,9 +288,14 @@
 \let\oldbackmatter\backmatter
 \renewcommand{\backmatter}{\oldbackmatter\mainmatterfalse}
 
-% Draw the line below the header in the title color.
-\setkomafont{headsepline}{\color{title}}
-\setkomafont{footsepline}{\color{title}}
+% Draw the line below the header in the title color (or black in print mode).
+\if@print
+    \setkomafont{headsepline}{\color{black}}
+    \setkomafont{footsepline}{\color{black}}
+\else
+    \setkomafont{headsepline}{\color{title}}
+    \setkomafont{footsepline}{\color{title}}
+\fi
 
 % Page numbers on the top left and top right.
 \lehead{\cropmarks\lthumb\textcolor{black}{\thepage}}
@@ -280,9 +312,14 @@
 \rofoot[]{}
 \cfoot[\textcolor{black}{\thepage}]{}
 
-% Draw the line above a footnote in the title color as well.
-\setfootnoterule{0.5\textwidth}
-\addtokomafont{footnoterule}{\color{title}}
+% Draw the line above a footnote in the title color (or black in print mode).
+\if@print
+    \setfootnoterule{0.5\textwidth}
+    \addtokomafont{footnoterule}{\color{black}}
+\else
+    \setfootnoterule{0.5\textwidth}
+    \addtokomafont{footnoterule}{\color{title}}
+\fi
 
 %% The dedication is vertically centered on a separate page and flushed to the
 %% right.
