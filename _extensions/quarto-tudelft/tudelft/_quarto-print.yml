@@ -1,7 +1,0 @@
-format:
-  tudelft-pdf:
-    print-mode: true
-    linkcolor: black
-    urlcolor: black
-    citecolor: black
-    toccolor: black
