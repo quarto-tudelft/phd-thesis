@@ -70,4 +70,5 @@ institute-logos:
 format:
   tudelft-pdf: 
     fourier: false # set to true to use fourier
+    keep-tex: true
   tudelft-html: default

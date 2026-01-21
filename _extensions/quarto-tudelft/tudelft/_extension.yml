@@ -38,6 +38,7 @@ contributes:
         - fonts-tudelft.sty
         - thumbindices.sty
         - color-tudelft.sty
+        - _quarto-print.yml
       template-partials:
         - partials/doc-class.tex
         - partials/before-body.tex

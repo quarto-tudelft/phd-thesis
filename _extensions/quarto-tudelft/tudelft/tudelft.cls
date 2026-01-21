@@ -182,24 +182,11 @@
 \protected\def\abx@missing#1{%
   \mbox{\reset@font\bfseries#1??}}
 
-%% Hyperlinks are cyan, except in print mode, when they are all black.
-\if@print
-    \hypersetup{
-        colorlinks = true,
-        citecolor = black,
-        linkcolor = black,
-        urlcolor = black,
-        bookmarksopen = true,
-    }
-\else
-    \hypersetup{
-        colorlinks = true,
-        citecolor = title,
-        linkcolor = title,
-        urlcolor = title,
-        bookmarksopen = true,
-    }
-\fi
+%% Hyperref settings - colors are controlled by Quarto YAML options
+\hypersetup{
+    colorlinks = true,
+    bookmarksopen = true,
+}
 
 
 %\KOMAoptions{numbers=endperiod}
@@ -272,14 +259,9 @@
 \newif\ifmainmatter
 \mainmattertrue
 
-% Print the current chapter and section at the top of the page in cyan (or black in print mode).
-\if@print
-    \renewcommand{\sectionmark}[1]{\markright{\ifmainmatter\textcolor{black}{\thesection.}\fi\ #1}{}}
-    \renewcommand{\chaptermark}[1]{\markboth{\ifmainmatter\textcolor{black}{\thechapter.}\fi\ #1}{}}
-\else
-    \renewcommand{\sectionmark}[1]{\markright{\ifmainmatter\textcolor{black}{\thesection.}\fi\ #1}{}}
-    \renewcommand{\chaptermark}[1]{\markboth{\ifmainmatter\textcolor{black}{\thechapter.}\fi\ #1}{}}
-\fi
+% Print the current chapter and section at the top of the page
+\renewcommand{\sectionmark}[1]{\markright{\ifmainmatter\textcolor{black}{\thesection.}\fi\ #1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\ifmainmatter\textcolor{black}{\thechapter.}\fi\ #1}{}}
 
 \let\oldfrontmatter\frontmatter
 \renewcommand{\frontmatter}{\oldfrontmatter\mainmatterfalse}
