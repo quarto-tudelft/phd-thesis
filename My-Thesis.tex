@@ -240,12 +240,12 @@ boxed title style={boxrule=0.0mm, fuzzy shadow={1pt}{-1pt}{0mm}{0.1mm}{gray}, ar
 
 %%%% --- end foldboxy preamble ----- %%%%%
 %%==== colors from yaml ===%
-\definecolor{RQ-color1}{HTML}{dff4fa}
-\definecolor{RQ-color2}{HTML}{00a6d6}
 \definecolor{Rec-color1}{HTML}{fff6e3}
 \definecolor{Rec-color2}{HTML}{ffb81c}
 \definecolor{TRQ-color1}{HTML}{80d2eb}
 \definecolor{TRQ-color2}{HTML}{00a6d6}
+\definecolor{RQ-color1}{HTML}{dff4fa}
+\definecolor{RQ-color2}{HTML}{00a6d6}
 %=============%
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -255,10 +255,10 @@ boxed title style={boxrule=0.0mm, fuzzy shadow={1pt}{-1pt}{0mm}{0.1mm}{gray}, ar
   pdfauthor={Patrick Altmeyer},
   pdfkeywords={Quarto, Extension, Template},
   colorlinks=true,
-  linkcolor={black},
+  linkcolor={blue},
   filecolor={Maroon},
-  citecolor={black},
-  urlcolor={black},
+  citecolor={Blue},
+  urlcolor={Blue},
   pdfcreator={LaTeX via pandoc}}
 
 
@@ -331,29 +331,7 @@ by
 
 \begin{titlepage}
 
-    \begin{center}
-
-        %% Extra whitespace at the top.
-        \vspace*{2\bigskipamount}
-
-        %% Print the title.
-        {\makeatletter
-            \titlestyle\bfseries\LARGE\@title
-            \makeatother}
-
-        %% Print the optional subtitle.
-        {\makeatletter
-            \ifx\@subtitle\undefined\else
-                \bigskip
-                \titlefont\titleshape\Large\@subtitle
-            \fi
-            \makeatother}
-
-    \end{center}
-
-    \cleardoublepage
-    \thispagestyle{empty}
-
+    
     \begin{center}
 
         %% The following lines repeat the previous page exactly.
@@ -391,9 +369,11 @@ by
 
         at Delft University of Technology
 
-        by the authority of the Rector Magnificus, Prof.~dr.~ir.~H. Bijl,
+        by the authority of the Rector Magnificus, 
 
-        Chair of the Board for Doctorates
+        Prof.~dr.~ir.~H. Bijl,
+
+        chair of the Board for Doctorates
 
         to be defended publicly on
 
@@ -513,7 +493,7 @@ institutes.
 
 \renewcommand*\contentsname{Table of contents}
 {
-\hypersetup{linkcolor=black}
+\hypersetup{linkcolor=}
 \setcounter{tocdepth}{2}
 \tableofcontents
 }
@@ -525,7 +505,7 @@ institutes.
 
 \markboth{Preface}{Preface}
 
-\begin{tcolorbox}[enhanced jigsaw, left=2mm, breakable, bottomtitle=1mm, colbacktitle=quarto-callout-note-color!10!white, coltitle=black, opacityback=0, toprule=.15mm, rightrule=.15mm, opacitybacktitle=0.6, arc=.35mm, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, colframe=quarto-callout-note-color-frame, toptitle=1mm, bottomrule=.15mm, colback=white, leftrule=.75mm]
+\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, opacityback=0, breakable, bottomrule=.15mm, toprule=.15mm, arc=.35mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6, toptitle=1mm, colframe=quarto-callout-note-color-frame, coltitle=black, colback=white, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}]
 
 Preface goes here. This chapter is optional.
 

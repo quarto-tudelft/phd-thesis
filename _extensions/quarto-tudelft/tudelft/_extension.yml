@@ -30,6 +30,7 @@ contributes:
       date-format: long
     epub: default
     pdf:
+      include-pre-title: false
       fourier: false
       documentclass-options: ["fourier"]
       format-resources:
