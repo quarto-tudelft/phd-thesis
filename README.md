@@ -27,3 +27,7 @@ If you already have an existing repository, we recommend using the [quarto-tudel
 To find out more about this extension, simply preview starter template:
 
     quarto preview
+
+## Propositions Sheet
+
+In addition to the main thesis template, the extension ships a simple template for the thesis propositions (`propositions.qmd`).

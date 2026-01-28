@@ -242,10 +242,10 @@ boxed title style={boxrule=0.0mm, fuzzy shadow={1pt}{-1pt}{0mm}{0.1mm}{gray}, ar
 %%==== colors from yaml ===%
 \definecolor{Rec-color1}{HTML}{fff6e3}
 \definecolor{Rec-color2}{HTML}{ffb81c}
-\definecolor{TRQ-color1}{HTML}{80d2eb}
-\definecolor{TRQ-color2}{HTML}{00a6d6}
 \definecolor{RQ-color1}{HTML}{dff4fa}
 \definecolor{RQ-color2}{HTML}{00a6d6}
+\definecolor{TRQ-color1}{HTML}{80d2eb}
+\definecolor{TRQ-color2}{HTML}{00a6d6}
 %=============%
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
@@ -267,67 +267,10 @@ boxed title style={boxrule=0.0mm, fuzzy shadow={1pt}{-1pt}{0mm}{0.1mm}{gray}, ar
 \date{}
 \begin{document}
 % Adapted with the help of Claude Sonnet 3.7
-
-% Adapted with the help of Claude Sonnet 3.7
 % !TeX spellcheck = en_GB
 
 % Apply frontmatter styling (Roman numerals for the page numbers of the title pages and toc)
 \frontmatter
-
-% Disable headers and footers for propositions pages
-\thispagestyle{empty}
-% Save current section numbering depth
-\newcounter{savedsecnumdepth}
-\setcounter{savedsecnumdepth}{\value{secnumdepth}}
-% Disable section numbering
-\setcounter{secnumdepth}{-1}
-% Disable TOC entries
-\begingroup
-\renewcommand{\addcontentsline}[3]{}
-% Temporarily override header styling
-\addtokomafont{disposition}{\color{black}\rmfamily\normalfont\mdseries}
-\renewcommand*{\raggedchapter}{\centering}
-\renewcommand*{\raggedsection}{\centering}
-
-% Add centered title section
-\begin{center}
-{\LARGE\bfseries\titlefont Propositions}
-
-\vspace{0.5\baselineskip}
-
-accompanying the dissertation
-
-\vspace{0.5\baselineskip}
-
-{\large\bfseries\titlefont My Thesis}
-
-\vspace{0.5\baselineskip}
-
-by
-
-\vspace{0.5\baselineskip}
-
-{\large\bfseries\titlefont Patrick Altmeyer}
-\end{center}
-\vspace{1.5\baselineskip}
-
-% Insert propositions content
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Quarto is the most superior form of scientific publishing.
-\item
-  Julia is the most superior form of scientific computing.
-\item
-  Counterfactual explanations are the most intuitive way to explain
-  opaque machine learning models {[}@altmeyer2023explaining{]}.
-\end{enumerate}
-\endgroup
-% Restore section numbering
-\setcounter{secnumdepth}{\value{savedsecnumdepth}}
-% Clear to next page to ensure styling changes take effect
-\clearpage
 
 \begin{titlepage}
 
@@ -505,7 +448,7 @@ institutes.
 
 \markboth{Preface}{Preface}
 
-\begin{tcolorbox}[enhanced jigsaw, leftrule=.75mm, opacityback=0, breakable, bottomrule=.15mm, toprule=.15mm, arc=.35mm, colbacktitle=quarto-callout-note-color!10!white, bottomtitle=1mm, rightrule=.15mm, left=2mm, opacitybacktitle=0.6, toptitle=1mm, colframe=quarto-callout-note-color-frame, coltitle=black, colback=white, titlerule=0mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}]
+\begin{tcolorbox}[enhanced jigsaw, colback=white, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, opacitybacktitle=0.6, toptitle=1mm, leftrule=.75mm, bottomtitle=1mm, colframe=quarto-callout-note-color-frame, left=2mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, titlerule=0mm, toprule=.15mm, rightrule=.15mm, bottomrule=.15mm, arc=.35mm, coltitle=black, breakable]
 
 Preface goes here. This chapter is optional.
 

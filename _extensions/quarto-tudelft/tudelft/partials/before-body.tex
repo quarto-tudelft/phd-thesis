@@ -1,57 +1,8 @@
 % Adapted with the help of Claude Sonnet 3.7
-
-% Adapted with the help of Claude Sonnet 3.7
 % !TeX spellcheck = en_GB
 
 % Apply frontmatter styling (Roman numerals for the page numbers of the title pages and toc)
 \frontmatter
-
-$if(propositions)$
-% Disable headers and footers for propositions pages
-\thispagestyle{empty}
-% Save current section numbering depth
-\newcounter{savedsecnumdepth}
-\setcounter{savedsecnumdepth}{\value{secnumdepth}}
-% Disable section numbering
-\setcounter{secnumdepth}{-1}
-% Disable TOC entries
-\begingroup
-\renewcommand{\addcontentsline}[3]{}
-% Temporarily override header styling
-\addtokomafont{disposition}{\color{black}\rmfamily\normalfont\mdseries}
-\renewcommand*{\raggedchapter}{\centering}
-\renewcommand*{\raggedsection}{\centering}
-
-% Add centered title section
-\begin{center}
-{\LARGE\bfseries\titlefont Propositions}
-
-\vspace{0.5\baselineskip}
-
-accompanying the dissertation
-
-\vspace{0.5\baselineskip}
-
-{\large\bfseries\titlefont $title$}
-
-\vspace{0.5\baselineskip}
-
-by
-
-\vspace{0.5\baselineskip}
-
-{\large\bfseries\titlefont $author$}
-\end{center}
-\vspace{1.5\baselineskip}
-
-% Insert propositions content
-$propositions$
-\endgroup
-% Restore section numbering
-\setcounter{secnumdepth}{\value{savedsecnumdepth}}
-% Clear to next page to ensure styling changes take effect
-\clearpage
-$endif$
 
 \begin{titlepage}
 
