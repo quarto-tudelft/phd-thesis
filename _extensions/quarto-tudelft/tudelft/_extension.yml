@@ -40,7 +40,6 @@ contributes:
         - thumbindices.sty
         - color-tudelft.sty
         - templates/
-        - propositions.qmd
       template-partials:
         - partials/doc-class.tex
         - partials/before-body.tex
