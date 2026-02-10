@@ -1,0 +1,19 @@
+---
+title: My Presentation
+subtitle: Example of a TU Delft themed Reveal.js presentation
+author: Patrick Altmeyer
+format:
+  tudelft-revealjs:
+    theme: dark
+---
+
+## My First Slide
+
+- Amazing research question ?
+- What ?
+
+# Intro
+
+## Easy Things First
+
+- This is a presentation.
